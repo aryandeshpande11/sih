@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIH</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Questrial&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
     <section class="container">
@@ -26,21 +31,83 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="#" class="get">Get Started</a></li>
-
           </ul>
         </div>
       </div>
-      </section>
-      <section class="content"> 
-        <h1 class="slide-in">The New Standard</h1>
-          <h1 class="slide-in">in Data Analysis</h1>
-        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:25px"> Use Data to Get a 360-Degree<br>
-           View of Your Business</p>
-        <button class="Learn" style="margin-top: 30px;" > Learn More</button>
+    </section>
+    <section class="content">
+      <h1 class="slide-in">The New Standard</h1>
+      <h1 class="slide-in">in Data Analysis</h1>
+      <p class="first" style="
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          font-size: 25px;
+        "
+      >
+        Use Data to Get a 360-Degree<br />
+        View of Your Business
+      </p>
+      <button class="Learn" style="margin-top: 30px">Learn More</button>
 
       <button class="question">
-        <i class="fa-solid fa-message"></i></button>
-      </section>
- 
+        <i class="fa-solid fa-message"></i>
+      </button>
+
+      <section class="table">
+        <div class="columns">
+          <!-- Left column -->
+          <div class="left">
+            <h1>Let Your Data Take Your Business to Higher Grounds</h1>
+            <p class="scroll-hidden-left">
+              I'm a paragraph. Click here to add your own text and edit me. 
+              It’s easy. Just click “Edit Text” or double click me to add your own content.
+            </p>
+          </div>
+      
+          <!-- Right column -->
+          <div class="right grid">
+            <div class="card1 scroll-hidden-up">
+              <i class="fa-solid fa-cloud"></i>
+              <h3>Cloud Analytics Modernization</h3>
+              <p class="scroll-hidden-left">I'm a paragraph. Click here to add your own text...</p>
+            </div>
+      
+            <div class="card2 scroll-hidden-up">
+              <i class="fa-solid fa-database"></i>
+              <h3>Data Science Acceleration</h3>
+              <p class="scroll-hidden-left">I'm a paragraph. Click here to add your own text...</p>
+            </div>
+      
+            <div class="card1 scroll-hidden-up">
+              <i class="fa-solid fa-layer-group"></i>
+              <h3>Versatility in Application</h3>
+              <p class="scroll-hidden-left">I'm a paragraph. Click here to add your own text...</p>
+            </div>
+      
+            <div class="card2 scroll-hidden-up">
+              <i class="fa-solid fa-headset"></i>
+              <h3>Full Customer Experience Service</h3>
+              <p class="scroll-hidden-left">I'm a paragraph. Click here to add your own text...</p>
+            </div>
+          </div>
+        </div>
+          <script>
+          document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".scroll-hidden-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("scroll-visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  cards.forEach((card) => observer.observe(card));
+});
+
+          </script>
+        
+        
   </body>
 </html>
