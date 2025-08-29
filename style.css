@@ -1,160 +1,261 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    
+* {
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.container{
-    
-    height: 100px;
-    background-color: rgb(0, 0, 0); 
-    display: flex; 
-    padding: 0 40px;
+.container {
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  padding: 0 40px;
 }
-.nav-bar{
-        display: flex;
-        padding: 20px;
-        height: 60px;
-        width: 100vw;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 0px;
-    
+.nav-bar {
+  display: flex;
+  padding: 20px;
+  height: 60px;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0px;
 }
 
-.logo h2{
-    list-style: none;
-    color: white;
-    font-size: 30px;
-    font-weight: bolder;
+.logo h2 {
+  list-style: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
 }
-.logo{
-    height:fit-content;
-    align-items: center;
+.logo {
+  height: fit-content;
+  align-items: center;
 }
 
 .nav-right ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 40px;
-    align-items: center;  /* keeps all li contents vertically aligned */
-  }
-  
-.nav-bar a{
-    display: inline-block;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 40px;
+  align-items: center; /* keeps all li contents vertically aligned */
+}
 
-    flex-direction: row;
-    text-decoration: none;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.nav-bar a {
+  display: inline-block;
+
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .nav-bar a:hover:not(.get) {
-    color: rgb(211, 58, 68);
-    transition: 0.3s;
-    cursor: pointer;
+  color: rgb(211, 58, 68);
+  transition: 0.3s;
+  cursor: pointer;
 }
 .get {
-    background-color: black;
-    border: 1px solid white;
-    padding: 10px 15px;
-    border-radius: 9px;
-    color: white;
-    display: inline-block;
-    text-decoration: none;
-  }
-  
-  .get:hover{
-    background-color: rgb(96, 96, 205);
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-.content{
-    color: white;
-    background-color: black;
-    height: 100vh;
-;
-    
+  background-color: black;
+  border: 1px solid white;
+  padding: 10px 15px;
+  border-radius: 9px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
 }
-.content h1{
-    background-color: rgb(0, 0, 0); 
-    display: flex; 
-    padding: 0 40px;
-    font-size: 90px;
-    font-family: "Questrial", sans-serif;
-    opacity: 0;
-    animation: slideInLeft 1s ease-out forwards;
+
+.get:hover {
+  background-color: rgb(96, 96, 205);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.content {
+  color: white;
+  background-color: #000000;
+  height: 2000px;
+  width: 100vw;
+}
+.content h1 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  padding: 0 40px;
+  font-size: 90px;
+  font-family: "Questrial", sans-serif;
+  opacity: 0;
+  animation: slideInLeft 1s ease-out forwards;
+}
+.first {
+  font-size: 40px;
+  margin-top: 30px;
+  color: #ffffff;
+  padding: 0 40px;
+  animation: slideInLeft 1s ease-out forwards;
 }
 .content p {
-    font-size: 40px;
-    margin-top: 30px;
-    color: #ffffff;
-    padding: 0 40px;
-    animation: slideInLeft 1s ease-out forwards;
-   
-  }
-.Learn {
-    background-color: rgb(237, 70, 92);
-    border: none;
-    padding: 15px 15px;
-    border-radius: 9px;
-    color: rgb(0, 0, 0);
-    display: inline-block;
-    font-size: 20px;
-    cursor: pointer;
-    margin-left: 40px;
-    transition: 0.3s;
-    opacity: 0;
-    animation: slideInLeft 1s ease-out forwards;
-    animation-delay: 1.3s;
+  font-size: 20px;
+  margin-top: 30px;
+  color: #ffffff;
+  padding: 0 40px;
 }
-.Learn:hover{
-    background-color: #e04848;
-    transform: scale(1.1);
+
+.Learn {
+  background-color: rgb(237, 70, 92);
+  border: none;
+  padding: 15px 15px;
+  border-radius: 9px;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 40px;
+  transition: 0.3s;
+  opacity: 0;
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 1.3s;
+}
+.Learn:hover {
+  background-color: #e04848;
+  transform: scale(1.1);
 }
 .question {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgb(237, 70, 92);;
-    color: white;
-    border: none;
-    border-radius: 16px;
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
-    transition: 0.3s;
-    z-index: 999; /* stays above all content */
-  }
-  .question:hover {
-    background-color: #e04848;
-    transform: scale(1.1);
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(237, 70, 92);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  z-index: 999; /* stays above all content */
+}
+.question:hover {
+  background-color: #e04848;
+  transform: scale(1.1);
+}
+.grid .card1 i,
+.grid .card2 i {
+  font-size: 32px; /* taller rectangular feel */
+  color: #ed465c; /* Wix-like coral/red */
+  margin-bottom: 14px;
+  display: inline-block;
+}
+.grid h3 {
+  color: #c270e6;          /* Wix-ish blue */
+  margin: 6px 0 10px;
+  font-weight: 700;
+}
+.table {
+  border: 1px solid grey; /* faint grey border */
+  padding: 0 60px;
+  margin: 40px;
+  margin-top: 400px;
 
-  @keyframes slideInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  border-radius: 12px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* left + right */
+  gap: 50px;
+  align-items: stretch;
+}
+.left {
+  border-right: 1px solid grey;
+  padding-right: 40px;      /* spacing off the line */
+  display: flex;            /* keep text vertically centered while stretched */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h1 {
+  font-size: 2.5rem;
+}
+
+.left p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* grid for cards */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2×2 grid */
+  gap: 20px;
+}
+
+.card1 {
+  padding: 2rem;
+  background: #1b1919;
+  color: #fff;
+  min-height: 240px; /* ensures taller rectangular cards */
+  transform: translateY(100px);
+}
+.card2 {
+  padding: 2rem;
+  background: #1b1919;
+  color: #fff;
+  min-height: 240px; /* ensures taller rectangular cards */
+  transform: translateY(-100px);
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
   }
-  
-  .slide-in {
-    animation: slideInLeft 1s ease-out forwards;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .slide-in-slow {
-    animation: slideInLeft 2s ease-out forwards; 
-  }
-  
-  .slide-in.delay {
-    animation-delay: 0.6s;
-  }
+}
+
+.slide-in {
+  animation: slideInLeft 1s ease-out forwards;
+}
+.slide-in-slow {
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+.slide-in.delay {
+  animation-delay: 0.6s;
+}
+.scroll-hidden-up {
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card1.scroll-hidden-up {
+  transform: translateY(-100px); /* lower */
+}
+.card2.scroll-hidden-up {
+  transform: translateY(100px); /* higher */
+}
+.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Text inside cards (slide left → right) */
+.scroll-hidden-up h3,
+.scroll-hidden-up p,
+.scroll-hidden-up i {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.9s ease-out;
+}
+
+.scroll-visible h3,
+.scroll-visible p,
+.scroll-visible i {
+  opacity: 1;
+  transform: translateX(0);
+}
